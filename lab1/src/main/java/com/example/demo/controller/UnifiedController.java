@@ -30,14 +30,14 @@ public class UnifiedController {
         return "DELETE response";
     }
 
-    // Inner static aspect class
-    @Aspect
-    @Component
-    public static class LoggingAspect {
-
-        @Before("execution(* com.example.demo.controller.UnifiedController.*(..))")
-        public void logBefore(JoinPoint joinPoint) {
-            System.out.println(">>> Aspect Triggered Before Method: " + joinPoint.getSignature().getName());
-        }
-    }
+ // Inner static aspect class
+//    @Aspect
+//    @Component
+//    public static class LoggingAspect {
+//
+//        @Before("execution(* com.example.demo.controller.UnifiedController.*(..))")
+//        public void logBefore(JoinPoint joinPoint) {
+//            System.out.println(">>> Aspect Triggered Before Method: " + joinPoint.getSignature().getName());
+//        }
+//    }
 }
